@@ -13,27 +13,24 @@
     <h2>12 PM</h2>
   </header>
 
-  <body>
-    <main>
-        <h2><strong>Agenda</strong></h2>
-        <nav class="menu">
-            <ol>
-                <li><a href="#">Attendance</a></li>
-                <li><a href="#">Name Game</a></li>
-                <li><a href="#">Brain Storm</a></li>
-            </ol>
-        </nav>
-        <video 
-        controls
-        src="WIN_20240414_18_41_52_Pro.mp4" 
-        width="500"
-        alt="Video of introducing the meeting overview">
-        </video>
-        <audio controls>
-            <source src="Recording.m4a" alt="Voice recoding of the meeting overview">
-        </audio>
 
-    </main>
+<main>
+    <h2><strong>Agenda</strong></h2>
+    <nav class="menu">
+        <ol>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Name Game</a></li>
+            <li><a href="#">Brain Storm</a></li>
+        </ol>
+    </nav>
+    <video 
+    controls
+    src="WIN_20240414_18_41_52_Pro.mp4" 
+    width="500">
+    </video>
+    <audio controls>
+        <source src="Recording.m4a">
+    </audio>
     <hr>
     <div class="Attendance">
         <h2>Attendance</h2>
@@ -73,16 +70,14 @@
     <hr>
     <section>
         <h2><strong>Name Game</strong></h2>
-        <p>
-            <i>Today's Name Game will incorporate memorization by association. </i>
+        <i>Today's Name Game will incorporate memorization by association. </i>
 
-            <details>
-                <summary>Pay Attention!</summary>
-                Pay attention because you have to name everybody by the end of the meeting
-            </details>
-            Got it?
-            <input type="radio"/> Yes
-        </p>
+        <details>
+            <summary>Pay Attention!</summary>
+            Pay attention because you have to name everybody by the end of the meeting
+        </details>
+        Got it?
+        <input type="radio"/> Yes
 
     </section>
         <h2><strong>Brainstorm</strong></h2>
@@ -90,9 +85,9 @@
             <i>Let's braintorm some game ideas!</i>
             <br>
             <img src="https://m.media-amazon.com/images/M/MV5BMzNkMmE5MjktMzRhYS00MzZhLWEzYzMtMWFkYmE4MDk0NDZkXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg" 
-            height="200px" width="150px" alt="Photo of the game Hades">
+            height="200" width="150" alt="Photo of the game Hades">
             <img src="https://www.nintendo.com/eu/media/images/10_share_images/portals_3/SI_Hub_Zelda_Portal.jpg" 
-            height="100px" width="200px" alt="Photo of the game Zelda: Breath of the Wild">
+            height="100" width="200" alt="Photo of the game Zelda: Breath of the Wild">
             <br>
         </p>
 
@@ -119,15 +114,13 @@
         If you plan to miss a meeting in the future, please enter your name and the date you plan to miss:
     </h3>
     <form>
-        <p>Name:</p>
-        <input text="text"/>
+        <label for="name">Name:</label>
+        <input text="text" id="name" name="name"/>
         <input type="date"/>
         <input type="submit" />
     </form>
-
-  </body>
-
-  <hr>
+    <hr>
+</main>
   <footer>
     <p>Let's see if we can remember everyone's names!</p>
     <form>
@@ -138,6 +131,7 @@
         <input type="submit" />
     </form>
   </footer>
+  <hr>
 <h3>Yay you made it to the bottom of the page!</h3>
 <button type="button">Celebrate!</button>
 <br>
