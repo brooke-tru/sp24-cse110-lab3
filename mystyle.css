@@ -52,10 +52,10 @@ h1{
     margin-bottom: auto;
     margin-left: 10px;
     margin-right: auto; 
-    padding-top: auto;
-    padding-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: a10pxt10pxo;
     padding-left: 5px;
-    padding-right: auto;
+    padding-right: 10px;
     font-size: large;
 }
 
@@ -83,7 +83,7 @@ main p{
     border-radius: 25px;
     border-width: 5px;
     border-color: #D6AD9B;
-    margin: 10;
+    margin: 10px;
     display:inline-block;
 }
 
@@ -126,14 +126,14 @@ main p{
   }
 
 .Absent{
-    color: color(from red srgb r g b / 0.9)
+    color: color(red srgb r g b / 0.9)
 }
 
 .grid-container{
     display:grid;
     grid-template-columns: 200px 250px;
     grid-auto-rows: minmax(50px,auto);
-    grid-auto-flow: 10px;
+    grid-auto-flow: row;
 }
 
 .grid-item{
@@ -154,7 +154,7 @@ main p{
     cursor: pointer;
 }
 .celebrate:hover{
-    background-color: color-mix(in lch, plum 40%, pink 60%);;
+    background-color: color-mix(in lch, plum 40%, pink);
 }
 
 .celebrate:active {
@@ -168,10 +168,10 @@ main p{
     .Attendance{
         width: auto;
         height: auto;
-        padding: auto;
+        padding: 10px 10px 10px 10px;
         border-style: solid;
-        border-radius: auto;
-        border-width: auto;
+        border-radius: 25px;
+        border-width: 10px;
         border-color: #D6AD9B;
         margin: auto;
         display:inline-block;
@@ -190,7 +190,7 @@ main p{
 
 .nested {
     font-family:'Courier New', Courier, monospace;
-    font-size: 1 rem;
+    font-size: 1rem;
     & > a{
         color: salmon;
         &:hover, &:focus {
