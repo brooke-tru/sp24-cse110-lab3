@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="mystyle.css"> 
     <title> Meeting Minutes</title>
     <meta charset="utf-8" />
     <link rel="icon" href="https://i.pinimg.com/736x/a7/2e/50/a72e50bd8bb773a9840ca7d848bdf6c6.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        h2{
+            /*Color: hsl*/
+            color: hsl(0, 80%, 50%, 45%)
+        }
+    </style>
   </head>
 
   <header>
-    <h1>Game Brainstorm</h1>
+    <h1 class="game_brainstorm">Game Brainstorm</h1>
     <hr>
     <h2>April 12, 2024</h2>
     <h2>12 PM</h2>
   </header>
-
-
+<body>
 <main>
     <h2><strong>Agenda</strong></h2>
     <nav class="menu">
@@ -23,36 +30,46 @@
             <li><a href="#">Brain Storm</a></li>
         </ol>
     </nav>
+
     <video 
     controls
     src="WIN_20240414_18_41_52_Pro.mp4" 
-    width="500">
+    width="500" class="video">
     </video>
-    <audio controls>
+
+    <audio controls class="audio">
         <source src="Recording.m4a">
     </audio>
+
     <hr>
+
     <div class="Attendance">
-        <h2>Attendance</h2>
+        <h2 class="atttext">Attendance</h2>
+
         <p>
             <span class ="Present">
-                <b>Present:</b>
+                <b class="atttext">Present:</b>
             </span>
         </p>
-        <ul>
-            <li> Leader: Sravya Chittuluri</li>
-            <li> Leader: Ravi Shende</li>
-            <li> Dev: Brooke Truong</li>
+
+        <ul class="flex-container">
+            <li class="flexitem"> Leader: Sravya Chittuluri</li>
+            <li class="flexitem"> Leader: Ravi Shende</li>
+            <li class="flexitem"> Dev: Brooke Truong</li>
         </ul>
+
         <p>
             <span class="Absent">
-                <b>Absent:</b>
+                <b class="atttext">Absent:</b>
             </span>
         </p>
+
         <ul>
-            <li> Dev: Andy Zhang</li>
+            <li style="text-align:center"> Dev: Andy Zhang</li>
         </ul>
+
         <i>If we forgot to mark you present please send in your name below:</i>
+
         <form>
             <fieldset>
                 <legend>Name</legend>
@@ -69,7 +86,7 @@
 
     <hr>
     <section>
-        <h2><strong>Name Game</strong></h2>
+        <h2 id="name-game"><strong>Name Game</strong></h2>
         <i>Today's Name Game will incorporate memorization by association. </i>
 
         <details>
@@ -80,34 +97,40 @@
         <input type="radio"/> Yes
 
     </section>
-        <h2><strong>Brainstorm</strong></h2>
-        <p>
-            <i>Let's braintorm some game ideas!</i>
-            <br>
-            <img src="https://m.media-amazon.com/images/M/MV5BMzNkMmE5MjktMzRhYS00MzZhLWEzYzMtMWFkYmE4MDk0NDZkXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg" 
-            height="200" width="150" alt="Photo of the game Hades">
-            <img src="https://www.nintendo.com/eu/media/images/10_share_images/portals_3/SI_Hub_Zelda_Portal.jpg" 
-            height="100" width="200" alt="Photo of the game Zelda: Breath of the Wild">
-            <br>
-        </p>
+    <h2><strong>Brainstorm</strong></h2>
+    <p>
+        <i>Let's braintorm some game ideas!</i>
+        <br>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzNkMmE5MjktMzRhYS00MzZhLWEzYzMtMWFkYmE4MDk0NDZkXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg" 
+        height="200" width="150" alt="Photo of the game Hades">
+        <img src="https://www.nintendo.com/eu/media/images/10_share_images/portals_3/SI_Hub_Zelda_Portal.jpg" 
+        height="100" width="200" alt="Photo of the game Zelda: Breath of the Wild">
+        <br>
+    </p>
+    <p class="vote"> Vote for your favorite game genre:</p>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">RPG</div>
+        <div class="grid-item grid-item-2">Racing</div>
+        <div class="grid-item grid-item-3">Sports</div>
+        <div class="grid-item grid-item-4">FPS</div>
+    </div>
+    
+    <input list="game-genres"/>
+    <datalist id="game-genres">
+        <option value="RPG"></option>
+        <option value="Racing"></option>
+        <option value="Sports"></option>
+        <option value="FPS"></option>
+    </datalist>
+    <p>What language should we write it in?</p>
 
-        <p> Vote for your favorite game genre:</p>
-        <input list="game-genres"/>
-        <datalist id="game-genres">
-            <option value="RPG"></option>
-            <option value="Racing"></option>
-            <option value="Sports"></option>
-            <option value="FPS"></option>
-        </datalist>
-        <p>What language should we write it in?</p>
-
-        <select>
-            <option value="">--Please choose an option--</option>
-            <option value="JS">JS</option>
-            <option value="C++">C++</option>
-            <option value="Scratch...">Scratch...</option>
-            <option value="Python">Python</option>
-        </select>
+    <select>
+        <option value="">--Please choose an option--</option>
+        <option value="JS">JS</option>
+        <option value="C++">C++</option>
+        <option value="Scratch...">Scratch...</option>
+        <option value="Python">Python</option>
+    </select>
 
     <hr>
     <h3>
@@ -121,6 +144,7 @@
 </main>
   <footer>
     <p>Let's see if we can remember everyone's names!</p>
+    <h3>very amazing prize if you do..!</h3>
     <form>
         <label>Type in every team member's name:</label>
         <br>
@@ -131,7 +155,14 @@
   </footer>
   <hr>
 <h3>Yay you made it to the bottom of the page!</h3>
-<button type="button">Celebrate!</button>
+<button class="celebrate" type="button">Celebrate!</button>
 <br>
 <input type="checkbox">Completed the meeting today
+
+
+<p class="nested">
+    This is testing out the <a hfref="#"> nested</a>, selector.
+</p>
+
+</body>
 </html>
