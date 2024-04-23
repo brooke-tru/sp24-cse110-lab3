@@ -53,7 +53,7 @@ h1{
     margin-left: 10px;
     margin-right: auto; 
     padding-top: 10px;
-    padding-bottom: a10pxt10pxo;
+    padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 10px;
     font-size: large;
@@ -126,7 +126,7 @@ main p{
   }
 
 .Absent{
-    color: color(red srgb r g b / 0.9)
+    color: color(from hsl(0 100% 50%) srgb r g b / 80%);
 }
 
 .grid-container{
@@ -142,6 +142,11 @@ main p{
     text-align:center;
 }
 
+.submit-button{
+    color: color-mix(srgb, blue 50%, white);
+    background-color: lightgoldenrodyellow;
+    border-radius: 25px;
+}
 
 .celebrate{
     width: 500px;
@@ -153,9 +158,7 @@ main p{
     color: whitesmoke;
     cursor: pointer;
 }
-.celebrate:hover{
-    background-color: color-mix(in lch, plum 40%, pink);
-}
+
 
 .celebrate:active {
     box-shadow: 5px 5px 10px lightgreen;
